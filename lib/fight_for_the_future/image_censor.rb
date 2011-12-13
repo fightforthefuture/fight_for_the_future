@@ -1,10 +1,11 @@
-require 'censorship/version'
 require 'RMagick'
+require 'uri'
 
-module Censorship
-  class Image
-    def initialize(original_path)
+module FightForTheFuture
+  class ImageCensor
+    def initialize(original_path, uri)
       @original_path = original_path
+      @uri = URI.parse(uri.to_s)
     end
 
     def write(censored_path)
@@ -13,7 +14,7 @@ module Censorship
 
       overlay(image)
       annotate(image, 'THIS IMAGE CENSORED', 10)
-      annotate(image, 'http://censr.net/23985', 20, Magick::SouthGravity)
+      annotate(image, @uri.to_s, 20, Magick::SouthGravity)
 
       image.write(censored_path)
     end
