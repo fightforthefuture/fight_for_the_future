@@ -27,4 +27,6 @@ Utilities to supplement the cause of [Fight for the Future][fight].
 
 ## License
 
-Fight for the Future is Copyright © 2011 Fight for the Future.
+Fight for the Future is Copyright © 2011 Fight for the Future. It is free
+software, and may be redistributed under the terms specified in the LICENSE
+file.
