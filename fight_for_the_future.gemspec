@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = FightForTheFuture::VERSION
   s.authors     = ['Tyler Hunt']
   s.email       = ['tyler@tylerhunt.com']
-  s.homepage    = ''
+  s.homepage    = 'http://fightforthefuture.org/'
   s.summary     = %q{Utilities to supplement the cause of Fight for the Future.}
 
   s.files       = `git ls-files`.split("\n")
